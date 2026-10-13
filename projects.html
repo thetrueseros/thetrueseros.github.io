@@ -30,13 +30,34 @@
 
         <!-- Contenido principal -->
         <main class="container my-5">
-            <h1 class="display-1 text-white">Proyectos</h1>
+            <h1 class="display-1 text-white typing-effect" id="titulo-tipado">Proyectos</h1>
             <p>Aquí hay una lista de proyectos de los cuales he sido parte o autor directo, ordenados de mayor a menor importancia.</p>
-            <div class="col-6 col-md-3 d-flex flex-column align-items-center">
-                <span class="font-manuscript" style="font-size: 45px;">Via360</span>
-            </div>
-            <div class="col-6 col-md-3 d-flex flex-column align-items-center">
-                <span class="font-manuscript" style="font-size: 45px">StickerBoard</span>
+
+            <!-- Fila principal que contiene la cuadrícula -->
+            <div class="row g-4">
+        
+                <!-- Cuadro 1: Via360 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <!-- Cada caja tiene su propio borde sutil y fondo oscuro -->
+                    <div class="p-3 border border-secondary border-opacity-50 bg-black h-100 d-flex flex-column">
+                        <span class="font-manuscript mb-2" style="font-size: 38px;">Via360</span>
+                        <p class="text-white small flex-grow-1">Aplicación de gestión de incidentes viales. Trabajé en el backend.</p>
+                        <div class="mt-3">
+                            <a href="#" class="btn btn-outline-light btn-sm">Ver video</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cuadro 2: StickerBoard -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="p-3 border border-secondary border-opacity-50 bg-black h-100 d-flex flex-column">
+                        <span class="font-manuscript mb-2" style="font-size: 38px;">StickerBoard</span>
+                        <p class="text-white small flex-grow-1">Programa que permite pegar stickers a un lienzo en blanco.</p>
+                        <div class="mt-3">
+                            <a href="#" class="btn btn-outline-light btn-sm">Ver video</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
 
