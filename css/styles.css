@@ -14,7 +14,9 @@
     font-family: 'Mea Culpa', cursive;
 }
 
-body {
+html, body {
+    height: 100%;
+    margin:0;
     background-color: #000000; /*negrillo*/
     color:#ffffff; /*blanquillo*/
 }
