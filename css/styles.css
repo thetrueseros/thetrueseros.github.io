@@ -63,10 +63,40 @@ span{
 }
 
 /* Estilos independientes para el Footer */
-footer.custom-footer {
+.custom-footer {
     background-color: transparent !important;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     border-bottom: none;
+}
+
+/* Transición suave para todos los enlaces y textos interactivos del footer */
+.custom-footer a {
+    transition: color 0.3s ease, transform 0.3s ease;
+    color: rgba(255, 255, 255, 0.6); /* Color base un poco más visible pero sobrio */
+}
+
+/* Efecto al hacer hover: se vuelven blanco puro y se elevan un ápice */
+.custom-footer a:hover {
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+/* Específicamente para los íconos dentro de los enlaces */
+.custom-footer a:hover i {
+    color: #ffffff !important;
+}
+
+/* En pantallas táctiles, se asegura que los enlaces tengan buena visibilidad desde el inicio */
+@media (hover: none) {
+    .custom-footer a {
+        color: rgba(255, 255, 255, 0.8) !important; /* Un poco más claros por defecto en móvil */
+    }
+    
+    /* Efecto instantáneo al tocar con el dedo en móviles */
+    .custom-footer a:active {
+        color: #ffffff !important;
+        transform: scale(0.95); /* efecto de presión táctil "haptic feel" */
+    }
 }
 
 .typing-effect {
