@@ -4,6 +4,7 @@
 /* Definición de clases para las fuentes */
 .font-gothic {
     font-family: 'UnifrakturMaguntia', cursive;
+    font-display: swap;
 }
 
 .font-script {
@@ -46,6 +47,7 @@ h2{
 /*Contraste para párrafos*/
 p{
     color: #ffffff !important;
+    font-size:18px;
     text-shadow: 0 0 0 10px rgba(25,255,255,0.15);
     font-family: 'Cinzel Decorative';
     
@@ -165,4 +167,11 @@ span{
 /* Opcional: un toque sutil al borde al pasar por encima, sin moverse */
 .skill-box:hover {
     border-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+/* Asegura que el título principal reserve su espacio exacto y no mueva el contenido */
+#titulo-tipado, .display-1 {
+    min-height: 1.12em; /* Reserva el equivalente a una línea completa de alto */
+    display: inline-block; /* Evita comportamientos extraños de bloque flotante */
+    width: 100%;
 }
