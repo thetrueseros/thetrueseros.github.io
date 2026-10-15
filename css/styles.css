@@ -175,3 +175,13 @@ span{
     display: inline-block; /* Evita comportamientos extraños de bloque flotante */
     width: 100%;
 }
+
+/* Forzar que el fondo de la ventana modal y su sombra mantengan la estética oscura */
+.modal-content {
+    background-color: #000000 !important;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+.modal-backdrop.show {
+    opacity: 0.85; /* Oscurece el fondo de la página al abrir la modal */
+}
